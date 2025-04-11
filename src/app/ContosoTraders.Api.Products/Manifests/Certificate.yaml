@@ -5,7 +5,8 @@ metadata:
 spec:
   secretName: tls-secret
   dnsNames:
-    - "q2hydaks-otpv2h27.hcp.westus.azmk8s.io"
+    #Note: The '{AKS_FQDN}' token will be substituted with the actual DNS label of the ingress controller's public IP by github workflow.
+    - q2hyd-bvc6cta9bac8gkgy.b01.azurefd.net
   issuerRef:
     name: letsencrypt
     kind: ClusterIssuer
